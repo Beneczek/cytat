@@ -1,9 +1,9 @@
 Cytat::Application.routes.draw do
-  get "pages/about"
-  get "pages/home"
-
-  get "pages/contact"
-
+  match "/about", :to => "pages#about"
+  match "/home", :to => "pages#home"
+  match "/help", :to => "pages#help"
+  match "/contact", :to =>  "pages#contact"
+  root :to => 'pages#home'
 
 
   # The priority is based upon order of creation:
