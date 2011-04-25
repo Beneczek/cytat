@@ -1,6 +1,5 @@
 Cytat::Application.routes.draw do
   resources :users
-  get "user/new"
 
   match "/about", :to => "pages#about"
   match "/home", :to => "pages#home"
