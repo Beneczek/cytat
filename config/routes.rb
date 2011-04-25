@@ -5,7 +5,7 @@ Cytat::Application.routes.draw do
   match "/home", :to => "pages#home"
   match "/help", :to => "pages#help"
   match "/contact", :to =>  "pages#contact"
-  match "/signup", :to => "user#new"
+  match "/signup", :to => "users#new"
   root :to => 'pages#home'
 
 
